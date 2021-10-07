@@ -9,7 +9,7 @@ if (student.Age> = 18)
 // if the student is younger than 18 years notification is being sent to his parents
 else
 {
-    //method SendMessageTo sends a meeting invitation to the student's legal guardian
+//method SendMessageTo sends a meeting invitation to the student's legal guardian
     notificationService.SendMessageTo(student.Parent, meetingInvitation);
 }
 // if student is eligible for blood donation, blood donating session is set for the student
