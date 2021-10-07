@@ -1,0 +1,19 @@
+//variable d represents days until deadline
+int d;
+// if the student is at least 18 years of age notification is being sent to student
+if (student.Age> = 18)
+{
+    //method SendMessageTo sends a notification to student
+    notificationService.SendMessageTo(student, meetingInvitation);
+}
+else // if the student is younger than 18 years notification is being sent to his parents
+{
+    //method SendMessageTo sends a meeting invitation to the student's legal guardian
+    notificationService.SendMessageTo(student.Parent, meetingInvitation);
+}
+// if student is eligible for blood donation, blood donating session is set for the student
+if (student.Age >= 17 && student.Weight >= 58.0 && student.Height >= 1.55)
+{   
+    //function that schedules blood donating session with the student
+    ScheduleBloodDonatingSessionWith(student);
+}
